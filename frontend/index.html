@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Model Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.13.5/ethers.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>AI Model Marketplace</h1>
+
+        <!-- Metamask Connection -->
+        <button id="connectWallet">Connect Wallet</button>
+        <p id="walletAddress">Wallet: Not Connected</p>
+
+        <!-- Token Balance -->
+        <h3>Your Token Balance: <span id="balance">0</span> AITU</h3>
+        
+        <!-- AI Model Listing Form -->
+        <h2>List AI Model</h2>
+        <input type="text" id="modelName" placeholder="Model Name">
+        <input type="text" id="modelDesc" placeholder="Description">
+        <input type="number" id="modelPrice" placeholder="Price in AITU">
+        <button id="listModel">List Model</button>
+
+        <!-- AI Model List -->
+        <h2>Available AI Models</h2>
+        <div id="modelList"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
